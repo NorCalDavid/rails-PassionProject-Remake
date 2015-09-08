@@ -8,6 +8,12 @@
 </head>
 <body>
 
+  <% if session[:user_id] %>
+    Signed in as <%= User.find(session[:user_id]).name %> | <%= link_to "Logout", '/logout' %>
+  <% else %>
+    <%= link_to 'Login', '/login' %> | <%= link_to 'Register', '/users/new' %>
+  <% end %>
+
 <%= yield %>
 
 </body>

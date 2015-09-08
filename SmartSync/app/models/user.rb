@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
 
+  has_secure_password
   has_many :properties
   has_many :homes, through: :properties, dependent: :destroy
   has_many :rooms, through: :homes, source: :properties
