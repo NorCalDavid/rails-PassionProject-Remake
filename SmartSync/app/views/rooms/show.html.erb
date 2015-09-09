@@ -1,0 +1,5 @@
+<h1>Room</h1>
+
+<% @room.keys.each do |key| %>
+  <p><%= key.to_s.capitalize %>: <%= @room[key] %></p>
+<% end %>

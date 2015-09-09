@@ -1,0 +1,9 @@
+<h1>Edit Room</h1>
+
+<%= form_for @room, url: {action: "update"} do |f| %>
+
+  Name: <%= f.text_field :name %>
+  Description: <%= f.text_field :description %>
+  <%= f.submit "Submit" %>
+
+<% end %>

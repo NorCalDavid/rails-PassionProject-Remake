@@ -1,2 +1,11 @@
-<h1>Users#rooms</h1>
-<p>Find me in app/views/users/rooms.html.erb</p>
+<h1>Rooms</h1>
+
+<% @homes.each do |home| %>
+
+  <p>Property: <%= link_to home.name, home %> - <%= home.city %>, <%= home.state %></p>
+
+  <% @rooms = home.rooms %>
+  <% @rooms.each do |room| %>
+    <p>Rooms: <%= link_to room.name, [room.home, room] %> - <%= room.description %></p>
+  <% end %>
+<% end %>

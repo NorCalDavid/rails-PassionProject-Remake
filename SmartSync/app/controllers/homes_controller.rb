@@ -9,10 +9,9 @@ class HomesController < ApplicationController
   end
 
   def create
-    # home = User.find(session[:user_id]).homes.new(home_params)
     home = Home.new(home_params)
     if home.save
-      User.find(session[:user_id]).homes << home
+      User.find(session[:user_id]).properties.create!(home: home)
       redirect_to home
     else
       render 'new'

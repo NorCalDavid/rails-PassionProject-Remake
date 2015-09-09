@@ -1,0 +1,9 @@
+<h1>Property: <%= @home.name %> - Rooms</h1>
+
+  <% @rooms.each do |room| %>
+    <div>
+      <p>Room: <%= link_to room.name, [room.home, room] %></p>
+      <p>Description: <%= room.description %></p>
+      <hr>
+    </div>
+  <% end %>
