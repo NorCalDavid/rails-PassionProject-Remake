@@ -1,0 +1,11 @@
+<h1>Property: <%= @home.name %> - <small>Room: <%= @room.name %></small></h1>
+
+  <% @devices.each do |device| %>
+    <div>
+      <p>Device: <%= link_to device.name, [device.home, device.room, device] %></p>
+      <p>Description: <%= device.description %></p>
+      <p>code: <%= device.code %></p>
+      <p>status: <%= device.status %></p>
+      <hr>
+    </div>
+  <% end %>

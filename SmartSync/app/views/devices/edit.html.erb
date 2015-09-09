@@ -1,0 +1,11 @@
+<h1>Edit Device</h1>
+
+<%= form_for @device, url: {action: "update"} do |f| %>
+
+  Name: <%= f.text_field :name %>
+  Description: <%= f.text_field :description %>
+  Code: <%= f.text_field :code %>
+  Status: <%= f.text_field :status %>
+  <%= f.submit "Submit" %>
+
+<% end %>

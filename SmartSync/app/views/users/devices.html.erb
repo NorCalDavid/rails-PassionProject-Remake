@@ -1,2 +1,18 @@
-<h1>Users#devices</h1>
-<p>Find me in app/views/users/devices.html.erb</p>
+<h1>Devices</h1>
+
+<% @homes.each do |home| %>
+
+  <hr><h3>Property: <%= link_to home.name, home %> - <%= home.city %>, <%= home.state %></h3>
+
+  <% @rooms = home.rooms %>
+  <% @rooms.each do |room| %>
+
+    <h4>&nbsp;&nbsp;&nbsp;Room: <%= link_to room.name, [room.home, room] %> - <%= room.description %></h4>
+
+    <% @devices = room.devices %>
+    <% @devices.each do |device| %>
+
+      <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Device: <%= link_to device.name, [device.home, device.room, device] %> - <small><%= device.description %></small></h5>
+    <% end %>
+  <% end %>
+<% end %>

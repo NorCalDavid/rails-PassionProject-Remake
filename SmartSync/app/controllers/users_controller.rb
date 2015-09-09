@@ -44,7 +44,7 @@ class UsersController < ApplicationController
   end
 
   def devices
-    @devices = User.find(params[:id]).devices
+    @homes = User.find(session[:user_id]).homes
   end
 
   private
