@@ -1,7 +1,7 @@
 class Home < ActiveRecord::Base
 
   has_many :properties
-  has_many :users, through: :properties
+  has_many :users, through: :properties, dependent: :destroy
   has_many :rooms
 
   validates :name, :presence => true
@@ -11,7 +11,7 @@ class Home < ActiveRecord::Base
   validates :zip_code, :presence => true
 
   def keys
-    [:name, :description, :address, :city, :state, :zip_code, :home_phone]
+    [:name, :description, :address, :city, :state, :zip_code]
   end
 
 end
