@@ -33,6 +33,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @counts = counts
   end
 
   def homes
@@ -53,9 +54,24 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :first_name, :last_name, :email, :password, :password_confirmation)
   end
 
-   def set_current_user(user)
-    session[:user_id] = user.id
-    @current_user = user
+  def counts
+    homes = User.find(session[:user_id]).homes
+    home_count = homes.length
+    room_count = 0
+    device_count = 0
+    homes.each do |home|
+      room_count += home.rooms.count
+      device_count += home.devices.count
+    end
+
+    return {  homes: home_count,
+              rooms: room_count,
+              devices: device_count  }
   end
+
+  #  def set_current_user(user)
+  #   session[:user_id] = user.id
+  #   @current_user = user
+  # end
 
 end

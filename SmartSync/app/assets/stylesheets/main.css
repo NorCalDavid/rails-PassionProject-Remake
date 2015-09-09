@@ -1,0 +1,140 @@
+.custom-login-buttons {
+    width: 250px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#loginmodalbtn {
+  padding-top: 30px;
+}
+.oauth-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+.gravatar-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+}
+.error-message {
+  color: #BD150E;
+}
+.tab {
+  margin-left: 40px;
+}
+.pad-top {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.yellow {
+  color: #f0ad4e;
+}
+.red {
+  color: #d9534f;
+}
+.green {
+  color: #5cb85c;
+}
+.device-table {
+  font-size: 125%;
+  font-weight: bold;
+}
+.row-height {
+  height: 70px;
+  vertical-align: middle;
+}
+.status-image {
+    width:50px;
+    height:50px;
+    padding:5px;
+}
+.s0 {
+    background:url('/img/icons/active/0.png');
+}
+.s100 {
+    background:url('/img/icons/active/100.png');
+}
+.s000 {
+    background:url('/img/icons/active/000.png');
+}
+.s999 {
+    background:url('/img/icons/active/999.png');
+}
+.s500 {
+    background:url('/img/icons/active/500.png');
+}
+.s501 {
+    background:url('/img/icons/active/501.png');
+}
+.s502 {
+    background:url('/img/icons/active/502.png');
+}
+.s700 {
+    background:url('/img/icons/active/700.png');
+}
+.s701 {
+    background:url('/img/icons/active/701.png');
+}
+.s702 {
+    background:url('/img/icons/active/702.png');
+}
+.s703 {
+    background:url('/img/icons/active/703.png');
+}
+.s704 {
+    background:url('/img/icons/active/704.png');
+}
+.s705 {
+    background:url('/img/icons/active/705.png');
+}
+.s750 {
+    background:url('/img/icons/active/750.png');
+}
+.s751 {
+    background:url('/img/icons/active/751.png');
+}
+.s752 {
+    background:url('/img/icons/active/752.png');
+}
+.s753 {
+    background:url('/img/icons/active/753.png');
+}
+.s754 {
+    background:url('/img/icons/active/754.png');
+}
+.s755 {
+    background:url('/img/icons/active/755.png');
+}
+.s756 {
+    background:url('/img/icons/active/756.png');
+}
+.s900 {
+    background:url('/img/icons/active/900.png');
+}
+.s901 {
+    background:url('/img/icons/active/901.png');
+}
+.logo-image {
+    vertical-align: middle;
+    height:40px;
+    padding:5px;
+}
+.logo-image-mp {
+    vertical-align: middle;
+    height:35px;
+    padding:5px;
+    text-align: left;
+}
+time {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 5px 0;
+}
+
+time:before {
+  content: attr(datetime="08:00");
+}
+
+.borderless {
+  border: none;
+}

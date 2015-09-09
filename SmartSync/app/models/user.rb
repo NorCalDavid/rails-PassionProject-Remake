@@ -22,4 +22,11 @@ class User < ActiveRecord::Base
     [:name, :first_name, :last_name, :email, :cell_phone, :password]
   end
 
+  def counts
+    user = User.find(session[:user_id])
+    return { homes: user.homes,
+             rooms: user.rooms,
+             devices: user.devices }
+  end
+
 end

@@ -13,6 +13,7 @@ class DevicesController < ApplicationController
   def create
     device = Room.find(params[:room_id]).devices.new(device_params)
     if device.save
+      current_user.devices << device
       redirect_to home_room_devices_path
     else
       render 'new'

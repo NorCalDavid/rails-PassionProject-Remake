@@ -3,6 +3,7 @@ class Home < ActiveRecord::Base
   has_many :properties
   has_many :users, through: :properties, dependent: :destroy
   has_many :rooms
+  has_many :devices, through: :rooms
 
   validates :name, :presence => true
   validates :address, :presence => true
