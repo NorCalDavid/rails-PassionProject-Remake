@@ -45,7 +45,7 @@
                         </li>
 
                         <li>
-                            <%= link_to(edit_user_path) do %>
+                            <%= link_to("users/#{current_user_id}/edit") do %>
                             <i class="fa fa-fw fa-wrench"></i> Update Profile
                             <% end %>
                         </li>
@@ -95,11 +95,11 @@
 
                                 <% if logged_in? %>
 
-                                <%= link_to(user_path) do %>
+                                <%= link_to("users/#{current_user_id}") do %>
                                 <i class="fa fa-fw fa-user"></i> View Profile
                                 <% end %>
 
-                                <%= link_to(edit_user_path) do %>
+                                <%= link_to("users/#{current_user_id}/edit") do %>
                                 <i class="fa fa-fw fa-wrench"></i> Update Profile
                                 <% end %>
 
