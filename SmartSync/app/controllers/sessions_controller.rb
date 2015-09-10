@@ -18,12 +18,14 @@ class SessionsController < ApplicationController
     logout
   end
 
-  private
+  def oauthcreate
+    user = User.from_omniauth(env["omniauth.auth"])
+    session[:user_id] = user.id
+    redirect_to root_path
+  end
 
-  # def set_current_user(user)
-  #   session[:user_id] = user.id
-  #   @current_user = user
-  # end
+
+  private
 
   def logout
     session.destroy
