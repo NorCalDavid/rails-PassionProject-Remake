@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  private
+
   def logged_in?
     !current_user.nil?
   end
@@ -23,6 +25,22 @@ class ApplicationController < ActionController::Base
     rescue
       logout
     end
+  end
+
+  def alert_string(num)
+    num.times { ap ("*" * 50).to_s, :color => {:string => :red} }
+  end
+
+  def console_alert(args = {})
+    alert_types = [[:title, :red], [:message, :green], [:parameters, :blue]]
+
+    alert_types.each do |alert_type|
+      alert_string(1)
+      ap "#{alert_type[0]}: #{args[alert_type[0]]}", :color => {:string => alert_type[1]}
+      alert_string(1)
+    end
+
+    puts
   end
 
 end

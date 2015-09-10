@@ -9,7 +9,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :token
       t.integer :expires
       t.string :picture
-      t.string :jwt
+      t.string :uid
 
       t.timestamps null: false
     end

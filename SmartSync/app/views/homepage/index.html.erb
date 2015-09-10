@@ -1,2 +1,37 @@
-<h1>Homepage#index</h1>
-<p>Find me in app/views/homepage/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SmartSync</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="site-wrapper">
+    <div class="container-fluid">
+      <div class="container">
+
+        <div class="page-header">
+            <%= image_tag("logo/home-logo-with-tag-large.png", class: "img-responsive center-block front-page-logo") %>
+        </div>
+
+        <div class="text-center">
+
+            <%= link_to(google_oauth_path, class: 'btn btn-lg btn-social btn-google custom-login-buttons') do %>
+            <i class="fa fa-google-plus"></i> Sign in with Google
+            <% end %>
+
+            <%= link_to(login_path, class: 'btn btn-lg btn-social btn-primary custom-login-buttons') do %>
+            <i class="fa fa-fw fa-lock"></i> Login
+            <% end %>
+
+            <%= link_to(new_user_path, class: 'btn btn-lg btn-social btn-primary custom-login-buttons') do %>
+            <i class="fa fa-lock"></i> Register
+            <% end %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

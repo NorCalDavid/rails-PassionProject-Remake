@@ -39,13 +39,13 @@
                     <ul class="dropdown-menu">
                         <% if logged_in? %>
                         <li>
-                            <%= link_to('/') do %>
+                            <%= link_to(user_path) do %>
                             <i class="fa fa-fw fa-user"></i> View Profile
                             <% end %>
                         </li>
 
                         <li>
-                            <%= link_to("users/#{current_user_id}/edit") do %>
+                            <%= link_to(edit_user_path) do %>
                             <i class="fa fa-fw fa-wrench"></i> Update Profile
                             <% end %>
                         </li>
@@ -95,11 +95,11 @@
 
                                 <% if logged_in? %>
 
-                                <%= link_to("users/#{current_user_id}") do %>
+                                <%= link_to(user_path) do %>
                                 <i class="fa fa-fw fa-user"></i> View Profile
                                 <% end %>
 
-                                <%= link_to("users/#{current_user_id}/edit") do %>
+                                <%= link_to(edit_user_path) do %>
                                 <i class="fa fa-fw fa-wrench"></i> Update Profile
                                 <% end %>
 
@@ -154,9 +154,9 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <!-- /////////////////////////////////// Insert Body Content Here /////////////////////////////////// -->
-                <div class='container-body'>
+                <!-- <div class='container-body'> -->
                     <%= yield %>
-                </div>
+                <!-- </div> -->
                 <!-- /////////////////////////////////// Insert Body Content Here /////////////////////////////////// -->
             </div>
         </div>

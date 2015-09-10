@@ -12,7 +12,7 @@ module ApplicationHelper
     begin
       @current_user ||= User.find(session[:user_id])
     rescue
-      logout
+
     end
   end
 end
