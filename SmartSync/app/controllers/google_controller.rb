@@ -1,46 +1,48 @@
 class GoogleController < ApplicationController
 
   def oauth
-    redirect_to "https://accounts.google.com/o/oauth2/auth?client_id=#{ENV['CLIENT_ID']}&response_type=code&scope=openid%20email&redirect_uri=http://localhost:9393/google/oauth/redirect&state=#{ENV['STATE']}"
+    redirect_to "https://accounts.google.com/o/oauth2/auth?client_id=#{ENV['CLIENT_ID']}&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=#{ENV['STATE']}"
   end
 
   def token
 
-    console_alert({ title: "GET 'google/oauth/redirect'",
-     message: "Parameters Sent to Google",
-     parameters: params })
+    console_alert({  title: "GET 'google/oauth/redirect'",
+      message: "Params",
+      parameters: params })
 
     if params[:state] != ENV['STATE']
       console_alert({ title: "Oauth 'STATE' Validation Alert",
-       message: "Oauth 'STATE' Validation Does Not Match\nPotential Hacker Warning" })
+        message: "Oauth 'STATE' Validation Does Not Match\nPotential Hacker Warning" })
     else
       console_alert({ title: "Oauth 'STATE' Validation Passed" })
     end
 
     options = { code: params[:code],
-      redirect_uri: "http://localhost:9393/google/oauth/redirect",
+      redirect_uri: "http://localhost:3000/oauth/redirect",
       client_id: ENV['CLIENT_ID'],
       client_secret: ENV['CLIENT_SECRET'],
       grant_type: "authorization_code" }
 
-      auth_response = HTTParty.post("https://www.googleapis.com/oauth2/v3/token", body: options)
+      console_alert({ title: "Info Sent to Google for Token",
+       parameters: options })
 
-      token = auth_response.parsed_response["access_token"]
-      expires = auth_response.parsed_response["expires_in"]
-      uid = auth_response.parsed_response["id_token"]
+      token_response = HTTParty.post("https://www.googleapis.com/oauth2/v3/token", body: options)
 
-      response = HTTParty.get("https://www.googleapis.com/oauth2/v3/userinfo", headers: { "Authorization" => "Bearer #{token}" })
+      token = token_response.parsed_response["access_token"]
+      expires = token_response.parsed_response["expires_in"]
+      uid = token_response.parsed_response["id_token"]
+
+      user_info_response = HTTParty.get("https://www.googleapis.com/oauth2/v3/userinfo", headers: { "Authorization" => "Bearer #{token}" })
 
       console_alert({ title: "Google Oauth User Info Response",
-        parameters: response.parsed_response })
+       parameters: user_info_response.parsed_response })
 
-      user = update_user_from_oauth(response.parsed_response, token, expires, uid)
+      user = oauth_update_user(user_info_response.parsed_response, token, expires, uid)
 
       console_alert({ title: "User Successfully Logged In",
-        arameters: { user_id: user.id } })
+        parameters: { user_id: user.id } })
 
       oauth_login(user, token)
-      status 200
 
       if user.uid == user.password
         redirect_to 'oauth_update_profile_path'
@@ -57,20 +59,25 @@ class GoogleController < ApplicationController
     def profile_update
       @user = User.find(session[:user_id])
 
-    if @user.update(oauth_params)
-      redirect_to @user
-    else
-      render 'edit'
-    end
+      if @user.update(oauth_params)
+        redirect_to @user
+      else
+        render 'edit'
+      end
     end
 
     private
 
-     def oauth_params
+    def oauth_params
       params.require(:user).permit(:name, :first_name, :last_name, :email, :password, :password_confirmation)
     end
 
     def oauth_update_user(args, token, expires, uid)
+
+      console_alert({  title: "Update User From Oauth'",
+       message: "Parameters Received From Google",
+       parameters: args })
+
       user = User.find_by(email: args.fetch("email")) || User.new(email: args.fetch("email"))
       user.name = args.fetch("name")
       user.first_name = args.fetch("given_name")

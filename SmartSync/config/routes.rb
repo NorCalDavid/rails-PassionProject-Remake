@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   get  'login'  => 'sessions#new', as: :login
   post 'login'  => 'sessions#create'
   get 'logout'  => 'sessions#destroy', as: :logout
-  get 'google/oauth' => 'google#oauth'
-  get 'google/oauth/redirect' => 'google#token'
-  get 'google/oauth/profile/update' => 'google#profile_edit', as: :oauth_update_profile
-  post 'google/oauth/profile' => 'google#profile_update'
+  get 'oauth' => 'google#oauth'
+  get 'oauth/redirect' => 'google#token'
+  get 'oauth/profile/update' => 'google#profile_edit', as: :oauth_update_profile
+  post 'oauth/profile' => 'google#profile_update'
 
   resources :users do
 

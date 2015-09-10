@@ -8774,3 +8774,2280 @@ Processing by UsersController#devices as HTML
   Rendered users/devices.html.erb within layouts/application (1.2ms)
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 131ms (Views: 129.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 09:57:47 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (539.3ms)
+Completed 200 OK in 544ms (Views: 543.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:57:48 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 09:57:48 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 09:57:48 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 09:57:48 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff2?v=4.4.0" for ::1 at 2015-09-10 09:57:48 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.8ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (54.8ms)
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.4.0" for ::1 at 2015-09-10 09:57:48 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/fontawesome-webfont.woff"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (30.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (59.7ms)
+
+
+Started GET "/assets/fonts/fontawesome-webfont.ttf?v=4.4.0" for ::1 at 2015-09-10 09:57:48 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/fontawesome-webfont.ttf"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (52.9ms)
+
+
+Started GET "/google/oauth" for ::1 at 2015-09-10 09:57:50 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:9393/google/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 09:59:33 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (133.7ms)
+Completed 200 OK in 135ms (Views: 134.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 09:59:33 -0700
+
+
+Started GET "/google/oauth" for ::1 at 2015-09-10 09:59:35 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/google/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/google/oauth" for ::1 at 2015-09-10 10:01:49 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/google/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/google/oauth" for ::1 at 2015-09-10 10:02:51 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/google/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:05:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (327.7ms)
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `google_oauth_path' for #<#<Class:0x007fed47947370>:0x007fed47946628>):
+    17: 
+    18:         <div class="text-center">
+    19: 
+    20:             <%= link_to(google_oauth_path, class: 'btn btn-lg btn-social btn-google custom-login-buttons') do %>
+    21:             <i class="fa fa-google-plus"></i> Sign in with Google
+    22:             <% end %>
+    23: 
+  app/views/homepage/index.html.erb:20:in `_app_views_homepage_index_html_erb___1986012830410901585_70328542301560'
+  app/controllers/homepage_controller.rb:3:in `index'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (52.9ms)
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20150908174901)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "name" character varying, "first_name" character varying, "last_name" character varying, "email" character varying, "password_digest" character varying, "token" character varying, "expires" integer, "picture" character varying, "uid" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150908174901"]]
+  [1m[35m (6.5ms)[0m  COMMIT
+Migrating to CreateHomes (20150908174918)
+  [1m[36m (6.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (9.8ms)[0m  CREATE TABLE "homes" ("id" serial primary key, "name" character varying, "description" character varying, "address" character varying, "city" character varying, "state" character varying, "zip_code" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150908174918"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to CreateRooms (20150908174924)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (3.3ms)[0m  CREATE TABLE "rooms" ("id" serial primary key, "name" character varying, "description" text, "home_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150908174924"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to CreateDevices (20150908174931)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (2.5ms)[0m  CREATE TABLE "devices" ("id" serial primary key, "name" character varying, "description" character varying, "code" integer, "status" character varying, "room_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150908174931"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to CreateProperties (20150908175931)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.8ms)[0m  CREATE TABLE "properties" ("id" serial primary key, "user_id" integer, "home_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (0.6ms)[0m  [1mCREATE  INDEX  "index_properties_on_user_id" ON "properties"  ("user_id")[0m
+  [1m[35m (0.7ms)[0m  CREATE  INDEX  "index_properties_on_home_id" ON "properties"  ("home_id")
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX  "index_properties_on_user_id_and_home_id" ON "properties"  ("user_id", "home_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150908175931"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUserDevices (20150908180817)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "user_devices" ("id" serial primary key, "user_id" integer, "device_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150908180817"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'devices'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'homes'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'properties'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'rooms'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'user_devices'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.2ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-09-10 10:08:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (316.7ms)
+Completed 200 OK in 321ms (Views: 320.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:08:22 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:14:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (319.8ms)
+Completed 200 OK in 324ms (Views: 323.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:14:14 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:14:17 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/GhBHwejOycKtSnYqyvnwDWnkd4HRrD7PxTK3aUNlTNE&authuser=0&prompt=consent&session_state=92aa67c38131a0d189dbe2f08f36175ab5dc78ee..e9c9" for ::1 at 2015-09-10 10:14:20 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/GhBHwejOycKtSnYqyvnwDWnkd4HRrD7PxTK3aUNlTNE", "authuser"=>"0", "prompt"=>"consent", "session_state"=>"92aa67c38131a0d189dbe2f08f36175ab5dc78ee..e9c9"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `ap' for #<GoogleController:0x007f815c69fcf0>):
+  app/controllers/application_controller.rb:31:in `block in alert_string'
+  app/controllers/application_controller.rb:31:in `times'
+  app/controllers/application_controller.rb:31:in `alert_string'
+  app/controllers/application_controller.rb:38:in `block in console_alert'
+  app/controllers/application_controller.rb:37:in `each'
+  app/controllers/application_controller.rb:37:in `console_alert'
+  app/controllers/google_controller.rb:9:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:16:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (323.9ms)
+Completed 200 OK in 328ms (Views: 327.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:16:09 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:16:10 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:16:10 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/rqfHogC0PNAugDPRexJBYJNj6V5cI7Ldjyo4yn-YZtY&authuser=0&prompt=consent&session_state=52e44ce790231b529e2f5eca7d9c5a91e68911b9..04f7" for ::1 at 2015-09-10 10:16:12 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/rqfHogC0PNAugDPRexJBYJNj6V5cI7Ldjyo4yn-YZtY", "authuser"=>"0", "prompt"=>"consent", "session_state"=>"52e44ce790231b529e2f5eca7d9c5a91e68911b9..04f7"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant GoogleController::HTTParty):
+  app/controllers/google_controller.rb:26:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (54.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:17:38 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (270.0ms)
+Completed 200 OK in 274ms (Views: 274.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:17:38 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:17:39 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:17:40 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/keTWd0WfVN1n_1Q7lbfTDiT05FUR8205LySMXPPf_HM&authuser=0&prompt=consent&session_state=9b0f706ef8290479f4f667794093acaa5df75531..f6a1" for ::1 at 2015-09-10 10:17:42 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/keTWd0WfVN1n_1Q7lbfTDiT05FUR8205LySMXPPf_HM", "authuser"=>"0", "prompt"=>"consent", "session_state"=>"9b0f706ef8290479f4f667794093acaa5df75531..f6a1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "mail.daviduli@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mail.daviduli@gmail.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 972ms (ActiveRecord: 3.1ms)
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/google_controller.rb:43:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (52.3ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/s7aEvgJhUhXj39cRSTolFIYOZprpBMOFDY1GrlCZbc0&authuser=0&session_state=4d317dc505a08f5d06513215e2c1dacc915d15d6..b353&prompt=none" for ::1 at 2015-09-10 10:18:29 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/s7aEvgJhUhXj39cRSTolFIYOZprpBMOFDY1GrlCZbc0", "authuser"=>"0", "session_state"=>"4d317dc505a08f5d06513215e2c1dacc915d15d6..b353", "prompt"=>"none"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "mail.daviduli@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mail.daviduli@gmail.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 515ms (ActiveRecord: 2.3ms)
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/google_controller.rb:43:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (26.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:18:46 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (126.4ms)
+Completed 200 OK in 128ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:18:46 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:18:46 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:18:46 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:18:46 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:18:46 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:18:46 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:18:47 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:18:49 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/PtI6-PTNQCkHvGjTLlb68UMyDjYE5kVk7JwmeSMHy8Q&authuser=0&session_state=a6181cfb2c24eb23fd5dbcf479ae2a13e4787725..3bbe&prompt=none" for ::1 at 2015-09-10 10:18:49 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/PtI6-PTNQCkHvGjTLlb68UMyDjYE5kVk7JwmeSMHy8Q", "authuser"=>"0", "session_state"=>"a6181cfb2c24eb23fd5dbcf479ae2a13e4787725..3bbe", "prompt"=>"none"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "mail.daviduli@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mail.daviduli@gmail.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000oauth_update_profile_path
+Completed 302 Found in 599ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/PtI6-PTNQCkHvGjTLlb68UMyDjYE5kVk7JwmeSMHy8Q&authuser=0&session_state=a6181cfb2c24eb23fd5dbcf479ae2a13e4787725..3bbe&prompt=none" for ::1 at 2015-09-10 10:18:50 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/PtI6-PTNQCkHvGjTLlb68UMyDjYE5kVk7JwmeSMHy8Q", "authuser"=>"0", "session_state"=>"a6181cfb2c24eb23fd5dbcf479ae2a13e4787725..3bbe", "prompt"=>"none"}
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 0.0ms)
+
+KeyError (key not found: "email"):
+  app/controllers/google_controller.rb:73:in `fetch'
+  app/controllers/google_controller.rb:73:in `oauth_update_user'
+  app/controllers/google_controller.rb:37:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:21:50 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (149.1ms)
+Completed 200 OK in 150ms (Views: 150.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:21:50 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:22:17 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/c_APpKHllGiPn_9l9YLv9NA-z2oyNInFD2OLsECyDhw&authuser=0&session_state=fc797beb1cebe9f9850b31c3f3b162798d65efe3..e3bc&prompt=none" for ::1 at 2015-09-10 10:22:17 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/c_APpKHllGiPn_9l9YLv9NA-z2oyNInFD2OLsECyDhw", "authuser"=>"0", "session_state"=>"fc797beb1cebe9f9850b31c3f3b162798d65efe3..e3bc", "prompt"=>"none"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "mail.daviduli@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mail.daviduli@gmail.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000oauth_update_profile_path
+Completed 302 Found in 899ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/c_APpKHllGiPn_9l9YLv9NA-z2oyNInFD2OLsECyDhw&authuser=0&session_state=fc797beb1cebe9f9850b31c3f3b162798d65efe3..e3bc&prompt=none" for ::1 at 2015-09-10 10:22:18 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/c_APpKHllGiPn_9l9YLv9NA-z2oyNInFD2OLsECyDhw", "authuser"=>"0", "session_state"=>"fc797beb1cebe9f9850b31c3f3b162798d65efe3..e3bc", "prompt"=>"none"}
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.0ms)
+
+KeyError (key not found: "email"):
+  app/controllers/google_controller.rb:73:in `fetch'
+  app/controllers/google_controller.rb:73:in `oauth_update_user'
+  app/controllers/google_controller.rb:37:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:28:46 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (143.4ms)
+Completed 200 OK in 145ms (Views: 144.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:28:46 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:28:47 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/4U9P57MkKQOAy6yRrUdgNGX_wPvg5L9hNAPoKgQTpxo&authuser=0&session_state=a714b87eafb3e096ac5f2139c662c4c150723c22..a3cc&prompt=none" for ::1 at 2015-09-10 10:28:47 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/4U9P57MkKQOAy6yRrUdgNGX_wPvg5L9hNAPoKgQTpxo", "authuser"=>"0", "session_state"=>"a714b87eafb3e096ac5f2139c662c4c150723c22..a3cc", "prompt"=>"none"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "mail.daviduli@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mail.daviduli@gmail.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000oauth_update_profile_path
+Completed 302 Found in 510ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/4U9P57MkKQOAy6yRrUdgNGX_wPvg5L9hNAPoKgQTpxo&authuser=0&session_state=a714b87eafb3e096ac5f2139c662c4c150723c22..a3cc&prompt=none" for ::1 at 2015-09-10 10:28:48 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/4U9P57MkKQOAy6yRrUdgNGX_wPvg5L9hNAPoKgQTpxo", "authuser"=>"0", "session_state"=>"a714b87eafb3e096ac5f2139c662c4c150723c22..a3cc", "prompt"=>"none"}
+Completed 500 Internal Server Error in 818ms (ActiveRecord: 0.0ms)
+
+KeyError (key not found: "email"):
+  app/controllers/google_controller.rb:78:in `fetch'
+  app/controllers/google_controller.rb:78:in `oauth_update_user'
+  app/controllers/google_controller.rb:37:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2015-09-10 10:31:00 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (66.3ms)
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:31:14 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/OoYaVq66zmpPBpFCsQQsLeS2HFiyoKV-kkeinJvhyS0&authuser=0&session_state=40bdde55d4ad1155813e7021438ec916e9f24064..df61&prompt=none" for ::1 at 2015-09-10 10:31:14 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/OoYaVq66zmpPBpFCsQQsLeS2HFiyoKV-kkeinJvhyS0", "authuser"=>"0", "session_state"=>"40bdde55d4ad1155813e7021438ec916e9f24064..df61", "prompt"=>"none"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "mail.daviduli@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mail.daviduli@gmail.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000oauth_update_profile_path
+Completed 302 Found in 482ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/OoYaVq66zmpPBpFCsQQsLeS2HFiyoKV-kkeinJvhyS0&authuser=0&session_state=40bdde55d4ad1155813e7021438ec916e9f24064..df61&prompt=none" for ::1 at 2015-09-10 10:31:14 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/OoYaVq66zmpPBpFCsQQsLeS2HFiyoKV-kkeinJvhyS0", "authuser"=>"0", "session_state"=>"40bdde55d4ad1155813e7021438ec916e9f24064..df61", "prompt"=>"none"}
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 0.0ms)
+
+KeyError (key not found: "email"):
+  app/controllers/google_controller.rb:78:in `fetch'
+  app/controllers/google_controller.rb:78:in `oauth_update_user'
+  app/controllers/google_controller.rb:37:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:34:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (267.0ms)
+Completed 200 OK in 272ms (Views: 271.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:34:37 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:34:38 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:34:42 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/P5xW-A3qthmss-4rivpav77Z3mdeixg8mR315eNx7CU&authuser=0&session_state=ad405697e3a34904b4dcfaec45780e341bbae4de..0e9b&prompt=none" for ::1 at 2015-09-10 10:34:42 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/P5xW-A3qthmss-4rivpav77Z3mdeixg8mR315eNx7CU", "authuser"=>"0", "session_state"=>"ad405697e3a34904b4dcfaec45780e341bbae4de..0e9b", "prompt"=>"none"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "mail.daviduli@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mail.daviduli@gmail.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000oauth_update_profile_path
+Completed 302 Found in 909ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/P5xW-A3qthmss-4rivpav77Z3mdeixg8mR315eNx7CU&authuser=0&session_state=ad405697e3a34904b4dcfaec45780e341bbae4de..0e9b&prompt=none" for ::1 at 2015-09-10 10:34:43 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/P5xW-A3qthmss-4rivpav77Z3mdeixg8mR315eNx7CU", "authuser"=>"0", "session_state"=>"ad405697e3a34904b4dcfaec45780e341bbae4de..0e9b", "prompt"=>"none"}
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.0ms)
+
+KeyError (key not found: "email"):
+  app/controllers/google_controller.rb:78:in `fetch'
+  app/controllers/google_controller.rb:78:in `oauth_update_user'
+  app/controllers/google_controller.rb:37:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.4ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.8ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.5ms)
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff2?v=4.4.0" for ::1 at 2015-09-10 10:36:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/assets/fonts/fontawesome-webfont.woff2"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/DavidUli/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.1ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.7ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:36:48 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (199.5ms)
+Completed 200 OK in 201ms (Views: 200.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:36:48 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:36:49 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:36:49 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/oauth/redirect?state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds&code=4/Rm_RlHS9DA99G2SW5qfqOQ7VMRjfmcFmadYTap-MPBM&authuser=0&session_state=e4f89f5fb5be3738fe0f674337621bda5bee5d35..d4aa&prompt=none" for ::1 at 2015-09-10 10:36:50 -0700
+Processing by GoogleController#token as HTML
+  Parameters: {"state"=>"hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds", "code"=>"4/Rm_RlHS9DA99G2SW5qfqOQ7VMRjfmcFmadYTap-MPBM", "authuser"=>"0", "session_state"=>"e4f89f5fb5be3738fe0f674337621bda5bee5d35..d4aa", "prompt"=>"none"}
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.0ms)
+
+KeyError (key not found: "email"):
+  app/controllers/google_controller.rb:78:in `fetch'
+  app/controllers/google_controller.rb:78:in `oauth_update_user'
+  app/controllers/google_controller.rb:37:in `token'
+
+
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (23.6ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/DavidUli/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (51.7ms)
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:56:00 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-10 10:56:57 -0700
+Processing by HomepageController#index as HTML
+  Rendered homepage/index.html.erb (161.6ms)
+Completed 200 OK in 163ms (Views: 162.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-d1994c87603b908f2297bc161c8676f33e2beb81b30eb3d0957cdf7f3ce735be.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/bootstrap.self-c68c406b70db1115478355392ee8e55e46903052ef2acc9b83a09aa57ea2c0d1.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/devices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/font-awesome/font-awesome.self-70958b3420389ba412ce680e58966aaea994bbf1575f685480c07516041b2d2d.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/google.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/homepage.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/main.self-806a42e0914d22214f0019d3941d021ca0702f46846601bad8d5deab92c68467.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/plugins/bootstrap-social.self-3bf18f1e36da1af659676c9ecfb3290f05014393fa1c146e217b65168ba8b691.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table-reorder-rows.self-8c068e76636aed8b76c5bd3b9cf649ad5a8b66c7519d9b9b7897e537e6b9e21c.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-4ab339183d8d348b57918636f36c349b37bd071566e28d695124ce289765d07b.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/plugins/examples.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/plugins/morris.self-b331eeb1aa336d072d4e7e055fede5e44d00e73a31cfbfa77b87ebf0d816265c.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/rooms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/sb-admin.self-9ccc1ad97edbfed5faf177f7aa44413e5882406a23f9e498e24a1799f628919a.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-db278e3a8fa6249c16796b113ebd29e11ef4e2cd021618ed84895d524a4511e0.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-ebce91ec66c71bcee451ea7da9128fd1bf8faa02c6d22ea04c598423431e4c08.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-ab1767545e27c0dbd36971e656ae4927171f673e3d932cdec2cbef39e991952b.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-8bb9309b6c24a4ba6b94026a049d25b13bdc0553b6fe83255c14a715ba624cc4.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-bd0c6724cdc75302fe98dfeff923112b76c1673cf4a0752a7050b7feea15594c.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-7e3ee4a243bb416b5f0111a0be08f8547c5d72ba71fe4afe4a4a007f5cb4e10e.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-d7f9330825307d053f68da11bb9ddc9b070df72deef3d115f2f3d55f66b17457.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-cd672ecad3b549e1dbd89bfd044e5812d6fdade56f42d48e3acee0c3f4614526.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/button.self-ceb562de883e04359bb2c06f07bdf6ecf065cc8a5027e2e58857c5e91b0b68e3.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-a87553101c955a01e2e8c81fad69a16582ddbf58fe95d5eb335dde5567af7647.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-5d09995e01b647168888180d40e271f9a6759d68ae7ac029d7026af58813d376.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-14e04bbe71282aa039322ab93e3a3a886ddede5f59a2f365f7c861f697bbeb21.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/bootstrap.self-d4a7db7b4a4fc9593019439322ad0d9f05b9511dc971ff57f6d900edf39eab44.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/core/bootstrap-table-all.self-4c06f3e0d0ba812bb6a64ad321578a9baf0be8d08607c4b5e8f6c88fc793c0c7.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/core/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/core/jquery.self-5d733928d6f670af7ec2d7a83e0240978d167cf6fb220328da36a29b6560d8c6.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/devices.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/google.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/home.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/homepage.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/plugins/bootstrap-table.self-5d3d41c9da6be6147717e698195e1ae5564f8128268d3d4e5edc95cdc80f1daf.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/rooms.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/sessions.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/users.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/assets/logo/home-logo-with-tag-large-c4e2f61fbcb24f815ea08d667577185f7c3c1adb665d257598abef275c5f098b.png" for ::1 at 2015-09-10 10:56:57 -0700
+
+
+Started GET "/oauth" for ::1 at 2015-09-10 10:56:59 -0700
+Processing by GoogleController#oauth as HTML
+Redirected to https://accounts.google.com/o/oauth2/auth?client_id=146665463628-il1vdvfkgbnb2pb39d4sr4bqnvptn7j0.apps.googleusercontent.com&response_type=code&scope=openid%20email&redirect_uri=http://localhost:3000/oauth/redirect&state=hhhjjh77hdfdfdjhfj334jhjhjhfd77999dsfdsjfds
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-09-10 10:57:40 -0700
+Processing by SessionsController#new as HTML
+  Rendered sessions/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 148ms (Views: 147.4ms | ActiveRecord: 0.0ms)

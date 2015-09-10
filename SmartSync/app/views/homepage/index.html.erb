@@ -12,22 +12,22 @@
       <div class="container">
 
         <div class="page-header">
-            <%= image_tag("logo/home-logo-with-tag-large.png", class: "img-responsive center-block front-page-logo") %>
+          <%= image_tag("logo/home-logo-with-tag-large.png", class: "img-responsive center-block front-page-logo") %>
         </div>
 
         <div class="text-center">
 
-            <%= link_to(google_oauth_path, class: 'btn btn-lg btn-social btn-google custom-login-buttons') do %>
-            <i class="fa fa-google-plus"></i> Sign in with Google
-            <% end %>
+          <%= link_to(oauth_path, class: 'btn btn-lg btn-social btn-google custom-login-buttons') do %>
+          <i class="fa fa-google-plus"></i> Sign in with Google
+          <% end %>
 
-            <%= link_to(login_path, class: 'btn btn-lg btn-social btn-primary custom-login-buttons') do %>
-            <i class="fa fa-fw fa-lock"></i> Login
-            <% end %>
+          <%= link_to(login_path, class: 'btn btn-lg btn-social btn-primary custom-login-buttons') do %>
+          <i class="fa fa-fw fa-lock"></i> Login
+          <% end %>
 
-            <%= link_to(new_user_path, class: 'btn btn-lg btn-social btn-primary custom-login-buttons') do %>
-            <i class="fa fa-lock"></i> Register
-            <% end %>
+          <%= link_to(new_user_path, class: 'btn btn-lg btn-social btn-primary custom-login-buttons') do %>
+          <i class="fa fa-lock"></i> Register
+          <% end %>
 
         </div>
       </div>

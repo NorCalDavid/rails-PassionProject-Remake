@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'dotenv-rails', :require => 'dotenv/rails-now'
+
+gem 'dotenv-rails', :groups => [:development, :test]
 gem 'oauth2'
+gem 'httparty'
 gem 'rails', '4.2.3'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
@@ -9,6 +11,7 @@ gem 'jquery-rails'
 gem 'bcrypt'
 gem "twitter-bootstrap-rails"
 gem "font-awesome-rails"
+gem 'awesome_print'
 
 group :development, :test do
   gem 'pry-rails'

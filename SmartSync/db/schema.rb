@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20150908180817) do
     t.string   "token"
     t.integer  "expires"
     t.string   "picture"
-    t.string   "jwt"
+    t.string   "uid"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
