@@ -1,11 +1,45 @@
-<h1>Register</h1>
+<div class="container-fluid">
+    <div class="page-header">
+        <h1><i class="fa fa-user fa-5x text-primary"></i> User <small>Registration</small></h1>
+    </div>
+</div>
 
-<%= form_for :user, url: '/users' do |f| %>
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+<!-- /////////////////// Insert Body Content Here /////////////////// -->
+<div class='container-body'>
+    <%= form_for @user, url: {action: "create"} do |f| %><!-- Begin | Register Form -->
+    <fieldset>
 
-<% end %>
+        <div class="col-md-7">
+            <legend>
+                <h4><i class="fa fa-chevron-right fa-1x"></i> Registration:<small>  Fill in the required fields.</small></h4>
+            </legend>
+
+            <div>
+                <label class="small" for="firstname">First Name (Required)</label>
+                <%= f.text_field :first_name %>
+            </div><br>
+
+            <div>
+                <label class="small" for="register_lastname">Last Name (Required)</label>
+                <%= f.text_field :last_name %>
+            </div><br>
+
+            <div>
+                <label class="small" for="register_email">Email Address (Required)</label>
+                <%= f.text_field :email %>
+            </div><br>
+
+            <div>
+                <label class="small" for="register_password">Password (Required)</label>
+                <%= f.password_field :password %>
+                <%= f.password_field :password_confirmation %>
+            </div><br>
+
+            <%= button_tag(type: 'submit', class: 'btn btn-lg btn-social btn-primary') do %>
+            <i class="fa fa-lock"></i> Register
+            <% end %>
+        </div>
+    </fieldset>
+    <% end %><!-- End | Register Form -->
+</div>

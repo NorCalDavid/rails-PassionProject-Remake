@@ -6,6 +6,7 @@ class RoomsController < ApplicationController
   end
 
   def new
+    @home = Home.find(params[:home_id])
     @room = Room.new
   end
 
@@ -29,30 +30,30 @@ class RoomsController < ApplicationController
   end
 
   def update
-     room = Room.find(params[:id])
+   room = Room.find(params[:id])
 
-    if room.update(room_params)
-      redirect_to home_room_path
-    else
-      render 'edit'
-    end
+   if room.update(room_params)
+    redirect_to home_room_path
+  else
+    render 'edit'
+  end
+end
+
+def destroy
+  room = Room.find(params[:id])
+  if room.destroy
+    redirect_to user_path
+  else
+    false
+    status 417
   end
 
-  def destroy
-    room = Room.find(params[:id])
-    if room.destroy
-      redirect_to user_path
-    else
-      false
-      status 417
-    end
-
-  end
+end
 
 private
 
-  def room_params
-    params.require(:room).permit(:name, :description)
-  end
+def room_params
+  params.require(:room).permit(:name, :description)
+end
 
 end

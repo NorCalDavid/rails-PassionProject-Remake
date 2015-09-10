@@ -1,0 +1,72 @@
+<div class="container-fluid">
+    <div class="page-header">
+        <h1><i class="fa fa-lightbulb-o fa-5x yellow"></i> Insteon <small>Login</small></h1>
+    </div>
+</div>
+
+    <div class="login-alert-partial">
+        <%= erb :'partials/_login_alert', :layout => false unless logged_in? %>
+    </div>
+
+
+<!-- /////////////////// Insert Body Content Here /////////////////// -->
+
+    <div class="select-property_and_room-partial-erb">
+
+        <%= erb :'partials/_select_property_and_room', :layout => false %>
+
+    </div>
+
+<!-- /////////////////// End Partial Form /////////////////// -->
+
+</div>
+
+<script>
+var $tableSP = $('#select-property-table');
+
+$(function () {
+    $('#modalTable3').on('shown.bs.modal', function () {
+        $tableSP.bootstrapTable('resetView'); }); });
+
+function loadSelectPropertyPartial(home_id) {
+    console.log("got you")
+    $("#select-property-container").hide();
+
+    var config = { url: '/user/<%= @config.id %>/room/show/form',
+                   type: 'GET',
+                   datatype: 'html',
+                   data: { home_id: home_id, action: "select" } };
+
+  $.ajax(config)
+
+  .done(function(response) {
+      console.log("Success");
+      $(".select-room-partial-erb").append(response) })
+
+  .fail(function(response) {
+      console.log("error") });
+ };
+
+ var $table2 = $('#select-room-table');
+
+$(function () {
+    $('#modalTable4').on('shown.bs.modal', function () {
+        $table2.bootstrapTable('resetView'); }); });
+
+function loadSelectRoomPartial(home_id, room_id) {
+
+    $("#select-room-container").hide();
+
+    var config = { url: '/user/<%= @config.id %>/device/new',
+                   type: 'GET',
+                   datatype: 'html',
+                   data: { home_id: home_id, room_id: room_id, action: "add" } };
+  $.ajax(config)
+
+  .done(function(response) { console.log("Success");
+                             $(".new-device-partial-erb").append(response) })
+
+  .fail(function(response) { console.log("error") });
+ };
+
+</script>
