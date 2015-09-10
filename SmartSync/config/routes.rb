@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'logout'  => 'sessions#destroy', as: :logout
   get 'google/oauth' => 'google#oauth'
   get 'google/oauth/redirect' => 'google#token'
+  get 'google/oauth/profile/update' => 'google#profile_edit', as: :oauth_update_profile
+  post 'google/oauth/profile' => 'google#profile_update'
 
   resources :users do
 
@@ -17,9 +19,9 @@ Rails.application.routes.draw do
     end
 
   end
-   resources :homes do
-      resources :rooms do
-        resources :devices
-      end
+  resources :homes do
+    resources :rooms do
+      resources :devices
     end
+  end
 end

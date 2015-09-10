@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="page-header">
+    <% if !@config.user.picture.nil? %>
+    <h1><img class="img-thumbnail img-circle" width="100" height="100" src="<%= @config.user.picture %>" alt="User Profile Picture"> User <small>Profile</small></h1>
+    <% else %>
+    <h1><i class="fa fa-user fa-5x text-primary"></i> User <small>Create Password</small></h1>
+    <% end %>
+  </div>
+</div>
+
+<!-- /////////////////// Insert Body Content Here /////////////////// -->
+<div class='container-body'>
+  <%= form_for @user, url: {action: "update"} do |f| %><!-- Begin | Update Form -->
+  <fieldset>
+
+    <div class="col-md-7">
+      <legend>
+        <h4><i class="fa fa-chevron-right fa-1x"></i> Update Information:<small>  Create Local Password.</small></h4>
+      </legend>
+
+      <div>
+        <label class="small" for="firstname">First Name (Required)</label>
+        <%= f.text_field :first_name %>
+      </div><br>
+
+      <div>
+        <label class="small" for="lastname">Last Name (Required)</label>
+        <%= f.text_field :last_name %>
+      </div><br>
+
+      <div>
+        <label class="small" for="register_password">Password (Required)</label>
+        <%= f.password_field :password %>
+        <%= f.password_field :password_confirmation %>
+      </div><br>
+
+      <%= button_tag(type: 'submit', class: 'btn btn-lg btn-social btn-primary') do %>
+      <i class="fa fa-lock"></i> Register
+      <% end %>
+    </div>
+  </fieldset>
+  <% end %><!-- End | Register Form -->
+</div>
