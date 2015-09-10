@@ -5,6 +5,7 @@ gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails'
 gem 'bcrypt'
+gem "twitter-bootstrap-rails"
 
 group :development, :test do
   gem 'pry-rails'
